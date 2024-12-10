@@ -1,6 +1,6 @@
 # XMMX Key Press Minigame - RedM
 
-A simple keypress minigame written in React Typscript with the option to use the arrow keys, numbers (numpad), or letters.
+A simple keypress minigame written in React with the option to use the arrow keys, numbers (numpad), or letters.
 
 <img src='https://r2.fivemanage.com/image/r365d_Sa10BT62V4O3.png' width='500'>
 <img src='https://r2.fivemanage.com/image/r365d_V9xPUlehRIqB.png' width='500'>
