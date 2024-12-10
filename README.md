@@ -1,4 +1,4 @@
-# XMMX Key Press Minigame - RedM
+# Key Press Minigame - RedM
 
 A simple keypress minigame written in React with the option to use the arrow keys, numbers (numpad), or letters.
 
