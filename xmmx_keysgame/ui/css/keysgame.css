@@ -1,0 +1,163 @@
+:root {
+    --color-main: #a10000;
+    --color-active: #ff0000a6;
+}
+  
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Chinese Rocks;
+    margin: 0;
+}
+
+@keyframes ripple {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-18px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--color-main);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(254, 120, 0, 0);
+    }
+}
+
+.game-container {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+    border-radius: 2px;
+    max-width: 60vw;
+    width: auto;
+}
+
+.option-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.9vw;
+    margin-bottom: 1vh;
+}
+
+.option-key {
+    width: 1.85vw;
+    height: 1.85vw;
+    background-color: rgba(0, 0, 0, 0.685);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.651);
+    position: relative;
+    animation: ripple 1.5s ease-in-out infinite, pulse 1s infinite;
+}
+
+.option-key:nth-child(1) {
+    animation-delay: 0s, 0s;
+}
+.option-key:nth-child(2) {
+    animation-delay: 0.2s, 0s;
+}
+.option-key:nth-child(3) {
+    animation-delay: 0.4s, 0s;
+}
+.option-key:nth-child(4) {
+    animation-delay: 0.6s, 0s;
+}
+.option-key:nth-child(5) {
+    animation-delay: 0.8s, 0s;
+}
+.option-key:nth-child(6) {
+    animation-delay: 1s, 0s;
+}
+.option-key:nth-child(7) {
+    animation-delay: 1.2s, 0s;
+}
+.option-key:nth-child(8) {
+    animation-delay: 1.4s, 0s;
+}
+.option-key:nth-child(9) {
+    animation-delay: 1.6s, 0s;
+}
+.option-key:nth-child(10) {
+    animation-delay: 1.8s, 0s;
+}
+.option-key:nth-child(11) {
+    animation-delay: 2s, 0s;
+}
+.option-key:nth-child(12) {
+    animation-delay: 2.2s, 0s;
+}
+.option-key:nth-child(13) {
+    animation-delay: 2.4s, 0s;
+}
+.option-key:nth-child(14) {
+    animation-delay: 2.6s, 0s;
+}
+.option-key:nth-child(15) {
+    animation-delay: 2.8s, 0s;
+}
+.option-key:nth-child(16) {
+    animation-delay: 3s, 0s;
+}
+.option-key:nth-child(17) {
+    animation-delay: 3.2s, 0s;
+}
+.option-key:nth-child(18) {
+    animation-delay: 3.4s, 0s;
+}
+.option-key:nth-child(19) {
+    animation-delay: 3.6s, 0s;
+}
+.option-key:nth-child(20) {
+    animation-delay: 3.8s, 0s;
+}
+
+.option-key.active {
+    background-color: var(--color-active)
+}
+
+.option-key span {
+    font-size: 2vh !important;
+    font-weight: 600;
+    color: #ffffff !important;
+    z-index: 1;
+}
+
+.progress-bar-container {
+    height: 1vh;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 1vh;
+    margin-top: 1vh;
+    box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.651);
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--color-main);
+    border-radius: 1vh;
+}
+
+.progress-display {
+    margin-bottom: 2vh;
+}
+
+.progress-display p {
+    font-size: 2vh;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 
+        1px 1px 2px black,
+        0 0 1px black;
+}
